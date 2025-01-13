@@ -39,5 +39,8 @@ const app = new elysia_1.Elysia()
         })
     });
 
-// Export the fetch function for serverless or web-standard environments
+// Use HTTP adapter to listen on a port
+app.listen(3000); // Change the port if needed
+
+// Export the app for serverless or HTTP testing environments
 exports.fetch = app.fetch;
