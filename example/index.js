@@ -37,5 +37,7 @@ const app = new elysia_1.Elysia()
             phoneNumber: elysia_1.t.String(),
             voucherCode: elysia_1.t.String()
         })
-    })
-    .listen(3000); // Add this line to open the port (for example, port 3000)
+    });
+
+// Export the fetch function for serverless or web-standard environments
+exports.fetch = app.fetch;
