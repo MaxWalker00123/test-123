@@ -1,4 +1,3 @@
-"use strict";
 // example/index.js
 var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, generator) {
     function adopt(value) { return value instanceof P ? value : new P(function(resolve) { resolve(value); }); }
@@ -39,4 +38,4 @@ const app = new elysia_1.Elysia()
             voucherCode: elysia_1.t.String()
         })
     })
-    .fetch; // Use fetch instead of listen
+    .listen(3000); // Add this line to open the port (for example, port 3000)
